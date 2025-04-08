@@ -3,6 +3,23 @@ This is the frontend for Marcus' shop.
 
 Check the backend [here](https://github.com/lucassanco/marcus-backend)
 
+##
+To run on a container on Docker:
+
+On the directory of the backend
+
+Build the image:
+
+```
+docker build -t frontend .
+```
+
+Run the container (interactive so that Ctrl-C works): 
+
+```
+docker run -it -p 5173:5173 frontend
+```
+
 # Landing
 
 Here we can choose if we want the public part of the shop (being a cleint) or the private part (being Marcus)
